@@ -1,0 +1,225 @@
+/*Prevent problems on different browsers*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+}
+
+/* header stuff here */
+header {
+    background-color: #ffffff;
+    padding: 1rem 10px;
+}
+
+header span {
+    color: #1565c0;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+/* small screen navigation */
+@media only screen and (max-width: 800px) {
+    nav ul {
+        margin: 0;
+        padding: 0;
+
+    }
+
+    nav a {
+        display: block;
+        text-align: center;
+        padding: .8rem;
+        color: #1f79e0;
+        text-decoration: none;
+        border-bottom: solid 1px white;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    nav .active a {
+        background-color: #010a0e;
+        color: #1f79e0;
+        background-image: linear-gradient(to bottom, #010a0e, #010a0e);
+    }
+
+}
+
+/* end small screens */
+
+
+
+/* Large screen navigation */
+@media only screen and (min-width: 801px) {
+
+    nav {
+    background-color: #010a0e;
+}
+nav ul {
+    margin: 0;
+    list-style-type: none;
+    padding: 0 10px;
+    display: flex;
+}
+nav a {
+    display: block;
+    padding: .83rem 1rem;
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: #1f79e0;
+    font-weight: 700;
+}
+
+nav li.active a {
+    background-color: #1f79e0;
+    color: #010a0e;
+}
+
+nav li a:hover {
+    color: #ffffff;
+}
+
+
+}
+
+/* end large screens */
+
+
+/* navigation stuff here */
+
+
+/*main stuff here */
+
+main {
+   padding: 1rem 10px; 
+}
+
+main h1 {
+    color: #1b5e20;
+}
+main h2 {
+    color: #1f79e0;
+    margin-bottom: .2rem;
+}
+main p {
+    margin: 0;
+    color: #333;
+}
+main ol {
+    padding: .5rem 30px;
+    background-color: #ffffff;
+}
+main dl dt {
+color: #1b5e20;
+font-weight: 700;
+margin-top: 1rem;
+}
+main dl dd {
+color: #1565c0;
+font-size: .9rem;
+margin-left: 20px;
+}
+main ul {
+    list-style-type: circle;
+}
+main ul li {
+    line-height: 125%;
+    margin-bottom: .5rem;
+    font-size: .9rem;
+}
+main strong {
+    font-weight: 700;
+    color: black;
+}
+main em {
+    font-weight: 300;
+    color: #1b5e20;
+}
+main address {
+    font-style: normal;
+    color: #1f79e0;
+    background-color: #010a0e;
+    padding: .5rem;
+    border-radius: 10px;
+    border: 1px solid #1f79e0;
+    width: 200px;
+}
+main a {
+    color: #1f79e0;
+}
+
+.hero {
+    width: 25%;
+    height: auto;
+}
+main a:hover {
+    color: #1b5e20;
+}
+
+/* main image stuff here */
+figure.ride {
+    margin: 0 0 0 10px;
+    width: 30%;
+    float: right;
+
+}
+
+figure.ride img {
+    width: 100%;
+    height: auto;
+}
+
+figure.ride figcaption {
+    text-align: center;
+    font-size: .75rem;
+}
+
+/* table stuff here */
+table.activities {
+    width: 100%;
+    border-collapse: collapse;
+
+}
+table.activities th {
+    background-color: #3179AF;
+    color: white;
+    padding: .6rem 2%;
+    text-align: left;
+
+}
+table.activities td {
+    color: #54691f;
+    padding: .4rem 2%;
+
+}
+table.activities tr:nth-child(odd) {
+    background-color: #eee;
+
+}
+table.activities tr:hover {
+    background-color: #ddd;
+    
+}
+
+
+/* footer stuff here */
+footer {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: .8rem;
+    color: #333;
+}
+footer p {
+    margin: 0;
+    letter-spacing: 3px;
+}
+header,
+nav,
+main,
+footer {
+    max-width: 64rem;
+    margin: 0 auto;
+}
